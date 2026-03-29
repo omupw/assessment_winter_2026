@@ -13,3 +13,11 @@ int main() {
 
   return 0;
 }
+
+long long rm_a0::RangeSum(long long l, long long r) {
+    long long sum = 0;
+    for (long long i = l; i <= r; i++) {
+        sum += i;
+    }
+    return sum;
+}

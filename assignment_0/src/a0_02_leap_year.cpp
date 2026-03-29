@@ -12,3 +12,25 @@ int main() {
 
   return 0;
 }
+std::string rm_a0::FormatLeapYearAnswer(bool is_leap_year) {
+    if (is_leap_year) {
+        return "YES\n";
+    }
+    else {
+        return "NO\n";
+    }
+}
+
+bool rm_a0::IsLeapYear(int year) {
+    if (year % 4 == 0) {
+        if (year % 100 != 0) {
+            return true;
+        }
+    }
+    else if (year % 400 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
